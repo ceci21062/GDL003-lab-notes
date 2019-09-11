@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import "firebase";
+//import StyleFirebaseAuth from "react-firebaseui/StyleFirebaseAuth";
 
-function App() {
+
+class App extends Component {
+  state={ isSignedIn: false}
+  render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          hola Laboratoria
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+        {this.state.isSignedIn ? (
+          <div>SIGNED IN!</div>
+        ) : (<div>NOT SIGNED IN!</div>
+        )}
+        </div>
   );
+  }
 }
 
 export default App;
