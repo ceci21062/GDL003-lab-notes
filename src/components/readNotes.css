@@ -1,0 +1,20 @@
+.notesHeader, .notesBody, .notesFooder,.menu{
+    font-family: 'Akronim', cursive;
+    background-color: rgba(0, 0, 0, .5);
+    padding:20px;
+    margin: 0 auto;
+  }
+  .notesHeader{
+    font-family: 'Akronim', cursive;
+    text-align: left;
+  }
+  .notesBody{
+    margin-top: 20px;
+  }
+  .notesFooder{
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    width: 100%;
+  }
+  
